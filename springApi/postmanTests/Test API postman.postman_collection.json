@@ -1,0 +1,336 @@
+{
+	"info": {
+		"_postman_id": "8586e7f6-aef2-4b58-830b-379459f5c81d",
+		"name": "Test API postman",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Test request with exception",
+			"item": [
+				{
+					"name": "Post not adult user",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Not adult user\", function() {\r",
+									"    pm.response.to.have.status(417);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\":\"Louise\",\r\n    \"country\":\"France\",\r\n    \"birthday\":\"2021-08-29\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:12345/SpringAPIProject/api/users/add",
+							"host": [
+								"localhost"
+							],
+							"port": "12345",
+							"path": [
+								"SpringAPIProject",
+								"api",
+								"users",
+								"add"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Post user not in France",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Do not live in France\", function() {\r",
+									"    pm.response.to.have.status(417);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\":\"Ryann\",\r\n    \"country\":\"Martinique\",\r\n    \"birthday\":\"1999-02-05\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:12345/SpringAPIProject/api/users/add",
+							"host": [
+								"localhost"
+							],
+							"port": "12345",
+							"path": [
+								"SpringAPIProject",
+								"api",
+								"users",
+								"add"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Post empty user",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Empty user\", function() {\r",
+									"    pm.response.to.have.status(417);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:12345/SpringAPIProject/api/users/add",
+							"host": [
+								"localhost"
+							],
+							"port": "12345",
+							"path": [
+								"SpringAPIProject",
+								"api",
+								"users",
+								"add"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Test request without exception",
+			"item": [
+				{
+					"name": "Post user",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Good user\", function() {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"/*localhost:12345/SpringAPIProject/api/users/Clement*/"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "",
+								"value": "",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\":\"Clement\",\r\n    \"country\":\"France\",\r\n    \"birthday\":\"1993-08-27\"\r\n}\r\n"
+						},
+						"url": {
+							"raw": "localhost:12345/SpringAPIProject/api/users/add",
+							"host": [
+								"localhost"
+							],
+							"port": "12345",
+							"path": [
+								"SpringAPIProject",
+								"api",
+								"users",
+								"add"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get user info by name",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Good user get\", function() {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "localhost:12345/SpringAPIProject/api/users/Clement",
+							"host": [
+								"localhost"
+							],
+							"port": "12345",
+							"path": [
+								"SpringAPIProject",
+								"api",
+								"users",
+								"Clement"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Post user with all the informations",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Good user with all the informations\", function() {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\":\"Ana\",\r\n    \"country\":\"France\",\r\n    \"birthday\":\"1999-01-10\",\r\n    \"phoneNumber\":\"0606060606\",\r\n    \"gender\":\"F\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:12345/SpringAPIProject/api/users/add",
+							"host": [
+								"localhost"
+							],
+							"port": "12345",
+							"path": [
+								"SpringAPIProject",
+								"api",
+								"users",
+								"add"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get user with all the info ",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Good user with all the informations get\", function() {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:12345/SpringAPIProject/api/users/Ana",
+							"host": [
+								"localhost"
+							],
+							"port": "12345",
+							"path": [
+								"SpringAPIProject",
+								"api",
+								"users",
+								"Ana"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get user inexistant",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:12345/SpringAPIProject/api/users/Marshal",
+							"host": [
+								"localhost"
+							],
+							"port": "12345",
+							"path": [
+								"SpringAPIProject",
+								"api",
+								"users",
+								"Marshal"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

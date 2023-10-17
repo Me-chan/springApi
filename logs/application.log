@@ -1,0 +1,147 @@
+2023-10-17 13:24:07,678 INFO [main] c.e.s.SpringApiApplication [StartupInfoLogger.java:51] - Starting SpringApiApplication using Java 17.0.8.1 with PID 23680 (C:\Users\user\Desktop\springApi\springApi\bin\main started by user in C:\Users\user\Desktop\springApi)
+2023-10-17 13:24:07,683 INFO [main] c.e.s.SpringApiApplication [SpringApplication.java:637] - No active profile set, falling back to 1 default profile: "default"
+2023-10-17 13:24:08,835 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:138] - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-10-17 13:24:08,927 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:208] - Finished Spring Data repository scanning in 77 ms. Found 1 JPA repository interfaces.
+2023-10-17 13:24:10,241 INFO [main] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:108] - Tomcat initialized with port(s): 12345 (http)
+2023-10-17 13:24:10,256 INFO [main] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] - Initializing ProtocolHandler ["http-nio-12345"]
+2023-10-17 13:24:10,261 INFO [main] o.a.c.c.StandardService [DirectJDKLog.java:173] - Starting service [Tomcat]
+2023-10-17 13:24:10,261 INFO [main] o.a.c.c.StandardEngine [DirectJDKLog.java:173] - Starting Servlet engine: [Apache Tomcat/10.1.13]
+2023-10-17 13:24:10,445 INFO [main] o.a.c.c.C.[.[.[/SpringAPIProject] [DirectJDKLog.java:173] - Initializing Spring embedded WebApplicationContext
+2023-10-17 13:24:10,447 INFO [main] o.s.b.w.s.c.ServletWebServerApplicationContext [ServletWebServerApplicationContext.java:291] - Root WebApplicationContext: initialization completed in 2663 ms
+2023-10-17 13:24:10,501 INFO [main] c.z.h.HikariDataSource [HikariDataSource.java:110] - HikariPool-1 - Starting...
+2023-10-17 13:24:10,869 INFO [main] c.z.h.p.HikariPool [HikariPool.java:565] - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:newdb user=SA
+2023-10-17 13:24:10,872 INFO [main] c.z.h.HikariDataSource [HikariDataSource.java:123] - HikariPool-1 - Start completed.
+2023-10-17 13:24:10,887 INFO [main] o.s.b.a.h.H2ConsoleAutoConfiguration [H2ConsoleAutoConfiguration.java:88] - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:newdb'
+2023-10-17 13:24:11,086 INFO [main] o.h.j.i.u.LogHelper [LogHelper.java:31] - HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-10-17 13:24:11,218 INFO [main] o.h.Version [Version.java:44] - HHH000412: Hibernate ORM core version 6.2.9.Final
+2023-10-17 13:24:11,221 INFO [main] o.h.c.Environment [Environment.java:191] - HHH000406: Using bytecode reflection optimizer
+2023-10-17 13:24:11,453 INFO [main] o.h.b.i.BytecodeProviderInitiator [BytecodeProviderInitiator.java:53] - HHH000021: Bytecode provider name : bytebuddy
+2023-10-17 13:24:11,672 INFO [main] o.s.o.j.p.SpringPersistenceUnitInfo [SpringPersistenceUnitInfo.java:87] - No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-10-17 13:24:12,062 INFO [main] o.h.b.i.BytecodeProviderInitiator [BytecodeProviderInitiator.java:53] - HHH000021: Bytecode provider name : bytebuddy
+2023-10-17 13:24:12,858 INFO [main] o.h.e.t.j.p.i.JtaPlatformInitiator [JtaPlatformInitiator.java:51] - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-10-17 13:24:12,899 INFO [main] o.s.o.j.LocalContainerEntityManagerFactoryBean [AbstractEntityManagerFactoryBean.java:437] - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-10-17 13:24:13,240 WARN [main] o.s.c.LocalVariableTableParameterNameDiscoverer [LocalVariableTableParameterNameDiscoverer.java:123] - Using deprecated '-debug' fallback for parameter name resolution. Compile the affected code with '-parameters' instead or avoid its introspection: com.example.springApi.repository.UserRepository
+2023-10-17 13:24:13,411 WARN [main] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration [JpaBaseConfiguration.java:231] - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-10-17 13:24:14,126 INFO [main] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] - Starting ProtocolHandler ["http-nio-12345"]
+2023-10-17 13:24:14,221 INFO [main] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:220] - Tomcat started on port(s): 12345 (http) with context path '/SpringAPIProject'
+2023-10-17 13:24:14,283 INFO [main] c.e.s.SpringApiApplication [StartupInfoLogger.java:57] - Started SpringApiApplication in 7.072 seconds (process running for 7.754)
+2023-10-17 13:25:03,510 INFO [http-nio-12345-exec-1] o.a.c.c.C.[.[.[/SpringAPIProject] [DirectJDKLog.java:173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-10-17 13:25:03,510 INFO [http-nio-12345-exec-1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:532] - Initializing Servlet 'dispatcherServlet'
+2023-10-17 13:25:03,511 INFO [http-nio-12345-exec-1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:554] - Completed initialization in 1 ms
+2023-10-17 13:33:19,185 INFO [main] c.e.s.SpringApiApplication [StartupInfoLogger.java:51] - Starting SpringApiApplication using Java 17.0.8.1 with PID 30664 (C:\Users\user\Desktop\springApi\springApi\bin\main started by user in C:\Users\user\Desktop\springApi)
+2023-10-17 13:33:19,188 INFO [main] c.e.s.SpringApiApplication [SpringApplication.java:637] - No active profile set, falling back to 1 default profile: "default"
+2023-10-17 13:33:20,333 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:138] - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-10-17 13:33:20,431 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:208] - Finished Spring Data repository scanning in 84 ms. Found 1 JPA repository interfaces.
+2023-10-17 13:33:21,722 INFO [main] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:108] - Tomcat initialized with port(s): 12345 (http)
+2023-10-17 13:33:21,734 INFO [main] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] - Initializing ProtocolHandler ["http-nio-12345"]
+2023-10-17 13:33:21,738 INFO [main] o.a.c.c.StandardService [DirectJDKLog.java:173] - Starting service [Tomcat]
+2023-10-17 13:33:21,738 INFO [main] o.a.c.c.StandardEngine [DirectJDKLog.java:173] - Starting Servlet engine: [Apache Tomcat/10.1.13]
+2023-10-17 13:33:21,931 INFO [main] o.a.c.c.C.[.[.[/SpringAPIProject] [DirectJDKLog.java:173] - Initializing Spring embedded WebApplicationContext
+2023-10-17 13:33:21,933 INFO [main] o.s.b.w.s.c.ServletWebServerApplicationContext [ServletWebServerApplicationContext.java:291] - Root WebApplicationContext: initialization completed in 2665 ms
+2023-10-17 13:33:22,001 INFO [main] c.z.h.HikariDataSource [HikariDataSource.java:110] - HikariPool-1 - Starting...
+2023-10-17 13:33:22,374 INFO [main] c.z.h.p.HikariPool [HikariPool.java:565] - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:newdb user=SA
+2023-10-17 13:33:22,377 INFO [main] c.z.h.HikariDataSource [HikariDataSource.java:123] - HikariPool-1 - Start completed.
+2023-10-17 13:33:22,400 INFO [main] o.s.b.a.h.H2ConsoleAutoConfiguration [H2ConsoleAutoConfiguration.java:88] - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:newdb'
+2023-10-17 13:33:22,664 INFO [main] o.h.j.i.u.LogHelper [LogHelper.java:31] - HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-10-17 13:33:22,777 INFO [main] o.h.Version [Version.java:44] - HHH000412: Hibernate ORM core version 6.2.9.Final
+2023-10-17 13:33:22,783 INFO [main] o.h.c.Environment [Environment.java:191] - HHH000406: Using bytecode reflection optimizer
+2023-10-17 13:33:23,020 INFO [main] o.h.b.i.BytecodeProviderInitiator [BytecodeProviderInitiator.java:53] - HHH000021: Bytecode provider name : bytebuddy
+2023-10-17 13:33:23,230 INFO [main] o.s.o.j.p.SpringPersistenceUnitInfo [SpringPersistenceUnitInfo.java:87] - No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-10-17 13:33:23,650 INFO [main] o.h.b.i.BytecodeProviderInitiator [BytecodeProviderInitiator.java:53] - HHH000021: Bytecode provider name : bytebuddy
+2023-10-17 13:33:24,634 INFO [main] o.h.e.t.j.p.i.JtaPlatformInitiator [JtaPlatformInitiator.java:51] - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-10-17 13:33:24,689 INFO [main] o.s.o.j.LocalContainerEntityManagerFactoryBean [AbstractEntityManagerFactoryBean.java:437] - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-10-17 13:33:25,315 WARN [main] o.s.c.LocalVariableTableParameterNameDiscoverer [LocalVariableTableParameterNameDiscoverer.java:123] - Using deprecated '-debug' fallback for parameter name resolution. Compile the affected code with '-parameters' instead or avoid its introspection: com.example.springApi.repository.UserRepository
+2023-10-17 13:33:25,509 WARN [main] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration [JpaBaseConfiguration.java:231] - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-10-17 13:33:25,975 INFO [main] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] - Starting ProtocolHandler ["http-nio-12345"]
+2023-10-17 13:33:26,045 INFO [main] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:220] - Tomcat started on port(s): 12345 (http) with context path '/SpringAPIProject'
+2023-10-17 13:33:26,069 INFO [main] c.e.s.SpringApiApplication [StartupInfoLogger.java:57] - Started SpringApiApplication in 7.324 seconds (process running for 8.085)
+2023-10-17 13:34:06,016 INFO [http-nio-12345-exec-4] o.a.c.c.C.[.[.[/SpringAPIProject] [DirectJDKLog.java:173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-10-17 13:34:06,016 INFO [http-nio-12345-exec-4] o.s.w.s.DispatcherServlet [FrameworkServlet.java:532] - Initializing Servlet 'dispatcherServlet'
+2023-10-17 13:34:06,020 INFO [http-nio-12345-exec-4] o.s.w.s.DispatcherServlet [FrameworkServlet.java:554] - Completed initialization in 4 ms
+2023-10-17 13:34:47,301 INFO [main] c.e.s.SpringApiApplication [StartupInfoLogger.java:51] - Starting SpringApiApplication using Java 17.0.8.1 with PID 30228 (C:\Users\user\Desktop\springApi\springApi\bin\main started by user in C:\Users\user\Desktop\springApi)
+2023-10-17 13:34:47,304 INFO [main] c.e.s.SpringApiApplication [SpringApplication.java:637] - No active profile set, falling back to 1 default profile: "default"
+2023-10-17 13:34:48,377 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:138] - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-10-17 13:34:48,497 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:208] - Finished Spring Data repository scanning in 104 ms. Found 1 JPA repository interfaces.
+2023-10-17 13:34:49,536 INFO [main] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:108] - Tomcat initialized with port(s): 12345 (http)
+2023-10-17 13:34:49,550 INFO [main] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] - Initializing ProtocolHandler ["http-nio-12345"]
+2023-10-17 13:34:49,554 INFO [main] o.a.c.c.StandardService [DirectJDKLog.java:173] - Starting service [Tomcat]
+2023-10-17 13:34:49,554 INFO [main] o.a.c.c.StandardEngine [DirectJDKLog.java:173] - Starting Servlet engine: [Apache Tomcat/10.1.13]
+2023-10-17 13:34:49,709 INFO [main] o.a.c.c.C.[.[.[/SpringAPIProject] [DirectJDKLog.java:173] - Initializing Spring embedded WebApplicationContext
+2023-10-17 13:34:49,711 INFO [main] o.s.b.w.s.c.ServletWebServerApplicationContext [ServletWebServerApplicationContext.java:291] - Root WebApplicationContext: initialization completed in 2336 ms
+2023-10-17 13:34:49,757 INFO [main] c.z.h.HikariDataSource [HikariDataSource.java:110] - HikariPool-1 - Starting...
+2023-10-17 13:34:50,044 INFO [main] c.z.h.p.HikariPool [HikariPool.java:565] - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:newdb user=SA
+2023-10-17 13:34:50,047 INFO [main] c.z.h.HikariDataSource [HikariDataSource.java:123] - HikariPool-1 - Start completed.
+2023-10-17 13:34:50,065 INFO [main] o.s.b.a.h.H2ConsoleAutoConfiguration [H2ConsoleAutoConfiguration.java:88] - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:newdb'
+2023-10-17 13:34:50,310 INFO [main] o.h.j.i.u.LogHelper [LogHelper.java:31] - HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-10-17 13:34:50,382 INFO [main] o.h.Version [Version.java:44] - HHH000412: Hibernate ORM core version 6.2.9.Final
+2023-10-17 13:34:50,384 INFO [main] o.h.c.Environment [Environment.java:191] - HHH000406: Using bytecode reflection optimizer
+2023-10-17 13:34:50,572 INFO [main] o.h.b.i.BytecodeProviderInitiator [BytecodeProviderInitiator.java:53] - HHH000021: Bytecode provider name : bytebuddy
+2023-10-17 13:34:50,762 INFO [main] o.s.o.j.p.SpringPersistenceUnitInfo [SpringPersistenceUnitInfo.java:87] - No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-10-17 13:34:51,118 INFO [main] o.h.b.i.BytecodeProviderInitiator [BytecodeProviderInitiator.java:53] - HHH000021: Bytecode provider name : bytebuddy
+2023-10-17 13:34:52,070 INFO [main] o.h.e.t.j.p.i.JtaPlatformInitiator [JtaPlatformInitiator.java:51] - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-10-17 13:34:52,125 INFO [main] o.s.o.j.LocalContainerEntityManagerFactoryBean [AbstractEntityManagerFactoryBean.java:437] - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-10-17 13:34:52,507 WARN [main] o.s.c.LocalVariableTableParameterNameDiscoverer [LocalVariableTableParameterNameDiscoverer.java:123] - Using deprecated '-debug' fallback for parameter name resolution. Compile the affected code with '-parameters' instead or avoid its introspection: com.example.springApi.repository.UserRepository
+2023-10-17 13:34:52,656 WARN [main] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration [JpaBaseConfiguration.java:231] - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-10-17 13:34:53,052 INFO [main] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] - Starting ProtocolHandler ["http-nio-12345"]
+2023-10-17 13:34:53,086 INFO [main] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:220] - Tomcat started on port(s): 12345 (http) with context path '/SpringAPIProject'
+2023-10-17 13:34:53,099 INFO [main] c.e.s.SpringApiApplication [StartupInfoLogger.java:57] - Started SpringApiApplication in 6.265 seconds (process running for 6.91)
+2023-10-17 13:36:27,186 INFO [http-nio-12345-exec-1] o.a.c.c.C.[.[.[/SpringAPIProject] [DirectJDKLog.java:173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-10-17 13:36:27,187 INFO [http-nio-12345-exec-1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:532] - Initializing Servlet 'dispatcherServlet'
+2023-10-17 13:36:27,189 INFO [http-nio-12345-exec-1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:554] - Completed initialization in 2 ms
+2023-10-17 13:37:05,668 INFO [main] c.e.s.SpringApiApplication [StartupInfoLogger.java:51] - Starting SpringApiApplication using Java 17.0.8.1 with PID 30388 (C:\Users\user\Desktop\springApi\springApi\bin\main started by user in C:\Users\user\Desktop\springApi)
+2023-10-17 13:37:05,675 INFO [main] c.e.s.SpringApiApplication [SpringApplication.java:637] - No active profile set, falling back to 1 default profile: "default"
+2023-10-17 13:37:06,912 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:138] - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-10-17 13:37:06,995 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:208] - Finished Spring Data repository scanning in 72 ms. Found 1 JPA repository interfaces.
+2023-10-17 13:37:08,182 INFO [main] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:108] - Tomcat initialized with port(s): 12345 (http)
+2023-10-17 13:37:08,204 INFO [main] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] - Initializing ProtocolHandler ["http-nio-12345"]
+2023-10-17 13:37:08,213 INFO [main] o.a.c.c.StandardService [DirectJDKLog.java:173] - Starting service [Tomcat]
+2023-10-17 13:37:08,214 INFO [main] o.a.c.c.StandardEngine [DirectJDKLog.java:173] - Starting Servlet engine: [Apache Tomcat/10.1.13]
+2023-10-17 13:37:08,702 INFO [main] o.a.c.c.C.[.[.[/SpringAPIProject] [DirectJDKLog.java:173] - Initializing Spring embedded WebApplicationContext
+2023-10-17 13:37:08,704 INFO [main] o.s.b.w.s.c.ServletWebServerApplicationContext [ServletWebServerApplicationContext.java:291] - Root WebApplicationContext: initialization completed in 2904 ms
+2023-10-17 13:37:08,841 INFO [main] c.z.h.HikariDataSource [HikariDataSource.java:110] - HikariPool-1 - Starting...
+2023-10-17 13:37:09,373 INFO [main] c.z.h.p.HikariPool [HikariPool.java:565] - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:newdb user=SA
+2023-10-17 13:37:09,378 INFO [main] c.z.h.HikariDataSource [HikariDataSource.java:123] - HikariPool-1 - Start completed.
+2023-10-17 13:37:09,404 INFO [main] o.s.b.a.h.H2ConsoleAutoConfiguration [H2ConsoleAutoConfiguration.java:88] - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:newdb'
+2023-10-17 13:37:09,686 INFO [main] o.h.j.i.u.LogHelper [LogHelper.java:31] - HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-10-17 13:37:09,816 INFO [main] o.h.Version [Version.java:44] - HHH000412: Hibernate ORM core version 6.2.9.Final
+2023-10-17 13:37:09,819 INFO [main] o.h.c.Environment [Environment.java:191] - HHH000406: Using bytecode reflection optimizer
+2023-10-17 13:37:10,152 INFO [main] o.h.b.i.BytecodeProviderInitiator [BytecodeProviderInitiator.java:53] - HHH000021: Bytecode provider name : bytebuddy
+2023-10-17 13:37:10,468 INFO [main] o.s.o.j.p.SpringPersistenceUnitInfo [SpringPersistenceUnitInfo.java:87] - No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-10-17 13:37:10,972 INFO [main] o.h.b.i.BytecodeProviderInitiator [BytecodeProviderInitiator.java:53] - HHH000021: Bytecode provider name : bytebuddy
+2023-10-17 13:37:12,094 INFO [main] o.h.e.t.j.p.i.JtaPlatformInitiator [JtaPlatformInitiator.java:51] - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-10-17 13:37:12,179 INFO [main] o.s.o.j.LocalContainerEntityManagerFactoryBean [AbstractEntityManagerFactoryBean.java:437] - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-10-17 13:37:13,012 WARN [main] o.s.c.LocalVariableTableParameterNameDiscoverer [LocalVariableTableParameterNameDiscoverer.java:123] - Using deprecated '-debug' fallback for parameter name resolution. Compile the affected code with '-parameters' instead or avoid its introspection: com.example.springApi.repository.UserRepository
+2023-10-17 13:37:13,300 WARN [main] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration [JpaBaseConfiguration.java:231] - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-10-17 13:37:14,002 INFO [main] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] - Starting ProtocolHandler ["http-nio-12345"]
+2023-10-17 13:37:14,065 INFO [main] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:220] - Tomcat started on port(s): 12345 (http) with context path '/SpringAPIProject'
+2023-10-17 13:37:14,077 INFO [main] c.e.s.SpringApiApplication [StartupInfoLogger.java:57] - Started SpringApiApplication in 9.217 seconds (process running for 9.979)
+2023-10-17 13:38:34,103 INFO [main] c.e.s.SpringApiApplication [StartupInfoLogger.java:51] - Starting SpringApiApplication using Java 17.0.8.1 with PID 30684 (C:\Users\user\Desktop\springApi\springApi\bin\main started by user in C:\Users\user\Desktop\springApi)
+2023-10-17 13:38:34,107 INFO [main] c.e.s.SpringApiApplication [SpringApplication.java:637] - No active profile set, falling back to 1 default profile: "default"
+2023-10-17 13:38:35,265 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:138] - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-10-17 13:38:35,389 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:208] - Finished Spring Data repository scanning in 104 ms. Found 1 JPA repository interfaces.
+2023-10-17 13:38:36,438 INFO [main] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:108] - Tomcat initialized with port(s): 12345 (http)
+2023-10-17 13:38:36,449 INFO [main] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] - Initializing ProtocolHandler ["http-nio-12345"]
+2023-10-17 13:38:36,455 INFO [main] o.a.c.c.StandardService [DirectJDKLog.java:173] - Starting service [Tomcat]
+2023-10-17 13:38:36,455 INFO [main] o.a.c.c.StandardEngine [DirectJDKLog.java:173] - Starting Servlet engine: [Apache Tomcat/10.1.13]
+2023-10-17 13:38:36,625 INFO [main] o.a.c.c.C.[.[.[/SpringAPIProject] [DirectJDKLog.java:173] - Initializing Spring embedded WebApplicationContext
+2023-10-17 13:38:36,627 INFO [main] o.s.b.w.s.c.ServletWebServerApplicationContext [ServletWebServerApplicationContext.java:291] - Root WebApplicationContext: initialization completed in 2447 ms
+2023-10-17 13:38:36,688 INFO [main] c.z.h.HikariDataSource [HikariDataSource.java:110] - HikariPool-1 - Starting...
+2023-10-17 13:38:37,048 INFO [main] c.z.h.p.HikariPool [HikariPool.java:565] - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:newdb user=SA
+2023-10-17 13:38:37,052 INFO [main] c.z.h.HikariDataSource [HikariDataSource.java:123] - HikariPool-1 - Start completed.
+2023-10-17 13:38:37,073 INFO [main] o.s.b.a.h.H2ConsoleAutoConfiguration [H2ConsoleAutoConfiguration.java:88] - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:newdb'
+2023-10-17 13:38:37,452 INFO [main] o.h.j.i.u.LogHelper [LogHelper.java:31] - HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-10-17 13:38:37,587 INFO [main] o.h.Version [Version.java:44] - HHH000412: Hibernate ORM core version 6.2.9.Final
+2023-10-17 13:38:37,591 INFO [main] o.h.c.Environment [Environment.java:191] - HHH000406: Using bytecode reflection optimizer
+2023-10-17 13:38:37,795 INFO [main] o.h.b.i.BytecodeProviderInitiator [BytecodeProviderInitiator.java:53] - HHH000021: Bytecode provider name : bytebuddy
+2023-10-17 13:38:37,983 INFO [main] o.s.o.j.p.SpringPersistenceUnitInfo [SpringPersistenceUnitInfo.java:87] - No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-10-17 13:38:38,375 INFO [main] o.h.b.i.BytecodeProviderInitiator [BytecodeProviderInitiator.java:53] - HHH000021: Bytecode provider name : bytebuddy
+2023-10-17 13:38:39,175 INFO [main] o.h.e.t.j.p.i.JtaPlatformInitiator [JtaPlatformInitiator.java:51] - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-10-17 13:38:39,227 INFO [main] o.s.o.j.LocalContainerEntityManagerFactoryBean [AbstractEntityManagerFactoryBean.java:437] - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-10-17 13:38:39,676 WARN [main] o.s.c.LocalVariableTableParameterNameDiscoverer [LocalVariableTableParameterNameDiscoverer.java:123] - Using deprecated '-debug' fallback for parameter name resolution. Compile the affected code with '-parameters' instead or avoid its introspection: com.example.springApi.repository.UserRepository
+2023-10-17 13:38:40,047 WARN [main] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration [JpaBaseConfiguration.java:231] - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-10-17 13:38:41,436 INFO [main] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] - Starting ProtocolHandler ["http-nio-12345"]
+2023-10-17 13:38:41,741 INFO [main] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:220] - Tomcat started on port(s): 12345 (http) with context path '/SpringAPIProject'
+2023-10-17 13:38:41,780 INFO [main] c.e.s.SpringApiApplication [StartupInfoLogger.java:57] - Started SpringApiApplication in 8.151 seconds (process running for 8.852)
+2023-10-17 13:39:23,926 INFO [http-nio-12345-exec-2] o.a.c.c.C.[.[.[/SpringAPIProject] [DirectJDKLog.java:173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-10-17 13:39:23,927 INFO [http-nio-12345-exec-2] o.s.w.s.DispatcherServlet [FrameworkServlet.java:532] - Initializing Servlet 'dispatcherServlet'
+2023-10-17 13:39:23,928 INFO [http-nio-12345-exec-2] o.s.w.s.DispatcherServlet [FrameworkServlet.java:554] - Completed initialization in 1 ms
