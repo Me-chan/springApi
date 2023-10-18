@@ -1,5 +1,5 @@
 
-# Project Title
+# SpringBoot API
 
 this project represents a SpringBoot api that exposes three services:
   * one that allows to register a user
@@ -45,7 +45,7 @@ A user can be added if he has all of this criterias:
 
 ## Test
 
-### Postman
+### Integration test with Postman
 We can test our API with Postman to see if we can post and get
 a user. We can also test that our exceptions return what we want.
 We need to test all the aspects of the project to make sure that
@@ -54,10 +54,5 @@ everything is working like it is supposed to.
 ### Unit test
 The unit tests are supposed to test every method inside the code
 and make sure that each one of them is working and give the expected
-result. 
-
-### Integration test
-The unit test is supposedto test all the aspects that we check with
-Postman. We need to make sure that the API is working locally and
-with a user
+result.
 

@@ -229,3 +229,37 @@
 2023-10-17 14:35:28,357 INFO [main] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] - Starting ProtocolHandler ["http-nio-12345"]
 2023-10-17 14:35:28,539 INFO [main] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:220] - Tomcat started on port(s): 12345 (http) with context path '/SpringAPIProject'
 2023-10-17 14:35:28,554 INFO [main] c.e.s.SpringApiApplication [StartupInfoLogger.java:57] - Started SpringApiApplication in 7.174 seconds (process running for 7.874)
+2023-10-17 16:53:57,750 WARN [HikariPool-1 housekeeper] c.z.h.p.HikariPool [HikariPool.java:804] - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=7m594ms489µs100ns).
+2023-10-17 19:59:52,535 WARN [HikariPool-1 housekeeper] c.z.h.p.HikariPool [HikariPool.java:804] - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=3h24s623ms921µs200ns).
+2023-10-18 08:33:49,948 WARN [HikariPool-1 housekeeper] c.z.h.p.HikariPool [HikariPool.java:804] - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=12h34m2s891ms768µs900ns).
+2023-10-18 10:04:32,172 INFO [main] c.e.s.SpringApiApplication [StartupInfoLogger.java:51] - Starting SpringApiApplication using Java 17.0.8.1 with PID 6596 (C:\Users\user\Desktop\springApi\springApi\bin\main started by user in C:\Users\user\Desktop\springApi)
+2023-10-18 10:04:32,175 INFO [main] c.e.s.SpringApiApplication [SpringApplication.java:637] - No active profile set, falling back to 1 default profile: "default"
+2023-10-18 10:04:33,588 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:138] - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-10-18 10:04:33,775 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:208] - Finished Spring Data repository scanning in 165 ms. Found 1 JPA repository interfaces.
+2023-10-18 10:04:35,165 INFO [main] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:108] - Tomcat initialized with port(s): 12345 (http)
+2023-10-18 10:04:35,180 INFO [main] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] - Initializing ProtocolHandler ["http-nio-12345"]
+2023-10-18 10:04:35,186 INFO [main] o.a.c.c.StandardService [DirectJDKLog.java:173] - Starting service [Tomcat]
+2023-10-18 10:04:35,187 INFO [main] o.a.c.c.StandardEngine [DirectJDKLog.java:173] - Starting Servlet engine: [Apache Tomcat/10.1.13]
+2023-10-18 10:04:35,424 INFO [main] o.a.c.c.C.[.[.[/SpringAPIProject] [DirectJDKLog.java:173] - Initializing Spring embedded WebApplicationContext
+2023-10-18 10:04:35,427 INFO [main] o.s.b.w.s.c.ServletWebServerApplicationContext [ServletWebServerApplicationContext.java:291] - Root WebApplicationContext: initialization completed in 3172 ms
+2023-10-18 10:04:35,508 INFO [main] c.z.h.HikariDataSource [HikariDataSource.java:110] - HikariPool-1 - Starting...
+2023-10-18 10:04:35,969 INFO [main] c.z.h.p.HikariPool [HikariPool.java:565] - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:newdb user=SA
+2023-10-18 10:04:35,971 INFO [main] c.z.h.HikariDataSource [HikariDataSource.java:123] - HikariPool-1 - Start completed.
+2023-10-18 10:04:35,989 INFO [main] o.s.b.a.h.H2ConsoleAutoConfiguration [H2ConsoleAutoConfiguration.java:88] - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:newdb'
+2023-10-18 10:04:36,267 INFO [main] o.h.j.i.u.LogHelper [LogHelper.java:31] - HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-10-18 10:04:36,411 INFO [main] o.h.Version [Version.java:44] - HHH000412: Hibernate ORM core version 6.2.9.Final
+2023-10-18 10:04:36,414 INFO [main] o.h.c.Environment [Environment.java:191] - HHH000406: Using bytecode reflection optimizer
+2023-10-18 10:04:36,663 INFO [main] o.h.b.i.BytecodeProviderInitiator [BytecodeProviderInitiator.java:53] - HHH000021: Bytecode provider name : bytebuddy
+2023-10-18 10:04:36,991 INFO [main] o.s.o.j.p.SpringPersistenceUnitInfo [SpringPersistenceUnitInfo.java:87] - No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-10-18 10:04:37,539 INFO [main] o.h.b.i.BytecodeProviderInitiator [BytecodeProviderInitiator.java:53] - HHH000021: Bytecode provider name : bytebuddy
+2023-10-18 10:04:38,488 INFO [main] o.h.e.t.j.p.i.JtaPlatformInitiator [JtaPlatformInitiator.java:51] - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-10-18 10:04:38,533 INFO [main] o.s.o.j.LocalContainerEntityManagerFactoryBean [AbstractEntityManagerFactoryBean.java:437] - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-10-18 10:04:39,023 WARN [main] o.s.c.LocalVariableTableParameterNameDiscoverer [LocalVariableTableParameterNameDiscoverer.java:123] - Using deprecated '-debug' fallback for parameter name resolution. Compile the affected code with '-parameters' instead or avoid its introspection: com.example.springApi.repository.UserRepository
+2023-10-18 10:04:39,187 WARN [main] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration [JpaBaseConfiguration.java:231] - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-10-18 10:04:39,612 INFO [main] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] - Starting ProtocolHandler ["http-nio-12345"]
+2023-10-18 10:04:39,671 INFO [main] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:220] - Tomcat started on port(s): 12345 (http) with context path '/SpringAPIProject'
+2023-10-18 10:04:39,683 INFO [main] c.e.s.SpringApiApplication [StartupInfoLogger.java:57] - Started SpringApiApplication in 8.105 seconds (process running for 9.013)
+2023-10-18 10:07:05,705 INFO [http-nio-12345-exec-2] o.a.c.c.C.[.[.[/SpringAPIProject] [DirectJDKLog.java:173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-10-18 10:07:05,706 INFO [http-nio-12345-exec-2] o.s.w.s.DispatcherServlet [FrameworkServlet.java:532] - Initializing Servlet 'dispatcherServlet'
+2023-10-18 10:07:05,718 INFO [http-nio-12345-exec-2] o.s.w.s.DispatcherServlet [FrameworkServlet.java:554] - Completed initialization in 11 ms
+2023-10-18 10:07:05,909 WARN [http-nio-12345-exec-2] o.s.w.s.m.s.DefaultHandlerExceptionResolver [AbstractHandlerExceptionResolver.java:207] - Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Cannot deserialize value of type `java.time.LocalDate` from String "1998-6-7": Failed to deserialize java.time.LocalDate: (java.time.format.DateTimeParseException) Text '1998-6-7' could not be parsed at index 5]

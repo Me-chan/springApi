@@ -23,7 +23,7 @@ public class UserExceptionHandler extends Exception{
      * @throws Exception
      */
     @UserLogExecutionTime
-    public void checkException(String username, String country, LocalDate birthday){
+    public void checkException(String username, String country, LocalDate birthday, String phoneNumber){
         if (isFieldNull(username, country, birthday)!=false){
             throw new ResponseStatusException(
             HttpStatus.EXPECTATION_FAILED, "Informations are missing, you need to give us your name, birthday date and country you live in");
@@ -33,6 +33,9 @@ public class UserExceptionHandler extends Exception{
         } else if (!country.equalsIgnoreCase("France")){
             throw new ResponseStatusException(
             HttpStatus.EXPECTATION_FAILED, "You can't register here because you don't live in France");
+        }else if(phoneNumber != null && phoneNumber.length()!=10){
+            throw new ResponseStatusException(
+            HttpStatus.EXPECTATION_FAILED, "Your phone number does'nt have the good size");
         }
     }
 

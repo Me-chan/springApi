@@ -30,7 +30,7 @@ public class UserService {
      */
     @UserLogExecutionTime
     public User saveUsersService(User user){
-        userException.checkException(user.getUsername(), user.getCountry(), user.getBirthday());
+        userException.checkException(user.getUsername(), user.getCountry(), user.getBirthday(), user.getPhoneNumber());
         user= userRepository.save(user);
         return user;
     }
